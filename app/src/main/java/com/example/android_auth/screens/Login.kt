@@ -34,13 +34,13 @@ fun Login(navController: NavController) {
             Button(
                 onClick = {
                           navController.navigate(Screen.Home.route)
-                }, colors = ButtonDefaults.buttonColors(Color(0xFF0165E1)),
+                }, colors = ButtonDefaults.buttonColors(Color(0xFF4285F4)),
                 modifier = Modifier
                     .height(45.dp)
                     .fillMaxWidth()
             ) {
                 Text(
-                    text = "Login with Facebook",
+                    text = "Login with Google",
                     color = Color.White,
                     fontSize = 14.sp,
                     fontWeight = FontWeight.Bold,
