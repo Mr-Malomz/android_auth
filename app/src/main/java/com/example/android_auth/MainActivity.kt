@@ -15,6 +15,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.android_auth.navigation.Navigation
 import com.example.android_auth.screens.Home
 import com.example.android_auth.screens.Login
 import com.example.android_auth.ui.theme.Android_authTheme
@@ -26,26 +27,9 @@ class MainActivity : ComponentActivity() {
             Android_authTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colors.background) {
-//                    Login(applicationContext)
-                    Home()
+                    Navigation()
                 }
             }
         }
     }
 }
-
-//@Composable
-//fun Greeting(name: String) {
-//    Text(
-//        text = "Hello $name!", color = Color.Blue, fontSize = 30.sp, modifier = Modifier.background(Color.Red)
-//            .padding(16.dp)
-//    )
-//}
-//
-//@Preview(showBackground = true)
-//@Composable
-//fun DefaultPreview() {
-//    Android_authTheme {
-//        Login();
-//    }
-//}

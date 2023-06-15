@@ -17,7 +17,10 @@ fun Home() {
     Column(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally,
-        modifier = Modifier.padding(20.dp)
+        modifier = Modifier
+            .padding(20.dp)
+            .fillMaxWidth()
+            .fillMaxHeight()
     ) {
 
         Text(
