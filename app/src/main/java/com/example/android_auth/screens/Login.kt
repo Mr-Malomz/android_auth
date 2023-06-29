@@ -1,6 +1,5 @@
 package com.example.android_auth.screens
 
-import android.content.Context
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.Button
@@ -15,12 +14,13 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
+import com.example.android_auth.MainActivity
 import com.example.android_auth.R
 import com.example.android_auth.navigation.Screen
 
 
 @Composable
-fun Login(navController: NavController) {
+fun Login(navController: NavController, activity: MainActivity) {
     Column(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally,
