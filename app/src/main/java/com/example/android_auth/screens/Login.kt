@@ -21,7 +21,6 @@ import com.example.android_auth.navigation.Screen
 import com.example.android_auth.utils.Client
 import kotlinx.coroutines.launch
 
-
 @Composable
 fun Login(navController: NavController, activity: MainActivity) {
     var client = Client()
@@ -61,19 +60,6 @@ fun Login(navController: NavController, activity: MainActivity) {
                     fontWeight = FontWeight.Bold,
                 )
             }
-//            var state = client.resourceData.observeAsState().value
-//            when (state) {
-//                is Resource.Success -> {
-//                    navController.navigate(Screen.Home.route )
-//                }
-//
-//                is Resource.Error -> {
-//                    Toast.makeText(activity, "Error login in with google", Toast.LENGTH_SHORT).show()
-//                }
-//
-//                is Resource.Loading -> {}
-//                else -> {}
-//            }
         }
     };
 }
